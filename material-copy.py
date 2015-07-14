@@ -9,7 +9,7 @@ parser.add_argument('name', type=str, help='The name of the icon eg. 3d_rotation
 parser.add_argument('color', type=str, help='color of the icon',choices=['black','white'])
 parser.add_argument('dest', type=str, help='Desination res folder')
 args = parser.parse_args()
-dirs = map(lambda x: args.group+'/drawable-'+x+'/', ['hdpi', 'mdpi', 'xhdpi', 'xxhdpi', 'xxxhdpi'])
+dirs = map(lambda x: 'material-design-icons/'+args.group+'/drawable-'+x+'/', ['hdpi', 'mdpi', 'xhdpi', 'xxhdpi', 'xxxhdpi'])
 
 for i in dirs:
     src = i+'_'.join(['ic', args.name.lower(), args.color.lower(), '48dp.png'])
