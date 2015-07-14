@@ -3,19 +3,17 @@ A python script to copy content from a google material design folder into your a
 
 #Usage
 
-1. Make sure you have the material design assets folder downloaded from here: https://github.com/google/material-design-icons/releases/download/1.0.1/material-design-icons-1.0.1.zip
-2. Preview the icons here: https://google.github.io/material-design-icons/
-2. Place material-copy.py into the `material-design-icons` folder
+1. Clone this repository
+2. Run `git submodules init && cd ./material-design-icons && git checkout 2.0.0 && cd ..`
 3. Add executable permission: `chmod +x material-copy.py`
-4. Run `./material-copy.py <group> <name> <color> <dest>`
+4. Run `./material-copy.py <group> <name> <color> <size> <dest>`
 
 #Example:
 ```
-(py2.7.10)$:~/material-design-icons-master$ python material-copy.py social poll white ~/workspace/some-project/res
-Copying social/drawable-hdpi/ic_poll_white_48dp.png to ~/workspace/some-project/res/drawable-hdpi/ic_poll_white_48dp.png
-Copying social/drawable-mdpi/ic_poll_white_48dp.png to ~/workspace/some-project/res/drawable-mdpi/ic_poll_white_48dp.png
-Copying social/drawable-xhdpi/ic_poll_white_48dp.png to ~/workspace/some-project/res/drawable-xhdpi/ic_poll_white_48dp.png
-Copying social/drawable-xxhdpi/ic_poll_white_48dp.png to ~/workspace/some-project/res/drawable-xxhdpi/ic_poll_white_48dp.png
-Creating ~/workspace/some-project/res/drawable-xxxhdpi
-Copying social/drawable-xxxhdpi/ic_poll_white_48dp.png to ~/workspace/some-project/res/drawable-xxxhdpi/ic_poll_white_48dp.png
+Material-Design-Copier$ ./material-copy.py navigation close black 48 /tmp
+('Copying', 'material-design-icons/navigation/drawable-hdpi/ic_close_black_48dp.png', 'to', '/tmp/drawable-hdpi/ic_close_black_48dp.png')
+('Copying', 'material-design-icons/navigation/drawable-mdpi/ic_close_black_48dp.png', 'to', '/tmp/drawable-mdpi/ic_close_black_48dp.png')
+('Copying', 'material-design-icons/navigation/drawable-xhdpi/ic_close_black_48dp.png', 'to', '/tmp/drawable-xhdpi/ic_close_black_48dp.png')
+('Copying', 'material-design-icons/navigation/drawable-xxhdpi/ic_close_black_48dp.png', 'to', '/tmp/drawable-xxhdpi/ic_close_black_48dp.png')
+('Copying', 'material-design-icons/navigation/drawable-xxxhdpi/ic_close_black_48dp.png', 'to', '/tmp/drawable-xxxhdpi/ic_close_black_48dp.png')
 ```
