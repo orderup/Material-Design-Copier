@@ -4,7 +4,7 @@ A python script to copy content from a google material design folder into your a
 #Usage
 
 1. Clone this repository and change to it
-2. Run `cd git submodule init && git submodule update`
+2. Run `git submodule init && git submodule update`
 3. Add executable permission: `chmod +x material-copy.py`
 4. Run `./material-copy.py <group> <name> <color> <size> <dest>`
 
